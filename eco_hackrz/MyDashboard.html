@@ -1,39 +1,74 @@
-<!DOCTYPE html>
-  <head>
-    <meta charset="UTF-8">
-    <script src="jquery-3.2.1.js"></script>
-    <script src="MyDashboard.js"></script>
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/modules/oldie.js"></script>
-    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
-    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
-    <title>My Dashboard</title>
-  </head>
+<html>
+    <head>
+      <link href="Semantic-UI-master/dist/semantic.min.css" rel="stylesheet" type="text/css">
+      <script src="jquery-3.2.1.js"></script>
+      <script src="Semantic-UI-master/dist/semantic.min.js"></script>
+      <script src="scripts.js"></script>
+      <link href="styles.css" rel="stylesheet" type="text/css">
+    
+      <!--status bar-->
+      <script src="MyDashboard.js"></script>
+      <script src="https://code.highcharts.com/highcharts.js"></script>
+      <script src="https://code.highcharts.com/modules/exporting.js"></script>
+      <script src="https://code.highcharts.com/modules/oldie.js"></script>
+      <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
+      <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
 
-  <body>
-    <div id="progressBar" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+    </head>
+    
+    <body>
+        <div class="ui main menu">
+            <a class="item active">
+                EcoHackrz
+            </a>
+            <div class="right menu">
+                <a href="" class="item">
+                  My Dashboard
+                </a>
+                <a class="item">
+                  New Entry
+                </a>
+                <a class="item">
+                  Explore
+                </a>
+                <a class="item">
+                  Info
+                </a>
+                <a class="item">
+                  Logout
+                </a>
+            </div>
+        </div>
+        
+        <h1>My Dashboard</h1>
+        <div class="ui centered grid">
+            <div class="eight wide column">
+                
+        
+                <div id="progressBar" style="min-width: 310px; max-width: 800px; height: 300px; margin: 0 auto"></div>
 
-    <table id="log_id" class="display">
-        <thead>
-            <tr>
-                <th>Column 1</th>
-                <th>Column 2</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Row 1 Data 1</td>
-                <td>Row 1 Data 2</td>
-            </tr>
-            <tr>
-                <td>Row 2 Data 1</td>
-                <td>Row 2 Data 2</td>
-            </tr>
-        </tbody>
-    </table>
-
-
-  </body>
-
+                <table id="log_id" class="display">
+                </table>
+            </div>
+            <div class="four wide column">
+                <div class="ui container gray-bg">
+                    <h3>This is where the pulse will go.</h3>
+                </div>
+                
+                <h2>About You</h2>
+                <div class="ui container bar-container">
+                    <div class="ui active progress" data-value="30" data-total="100" >
+                        <div class="bar">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="label">Your progress on this year's goal</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        
+        
+        
+    </body>
 </html>
