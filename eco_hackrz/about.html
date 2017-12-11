@@ -1,21 +1,14 @@
 <html>
     <head>
        <title>My Dashboard</title>
-    <!--semantics-->
-    <link href="Semantic-UI-master/dist/semantic.min.css" rel="stylesheet" type="text/css">
+      <!--semantics-->
       <script src="jquery-3.2.1.js"></script>
+      <link href="Semantic-UI-master/dist/semantic.min.css" rel="stylesheet" type="text/css">
       <script src="Semantic-UI-master/dist/semantic.min.js"></script>
       <script src="scripts.js"></script>
       <link href="styles.css" rel="stylesheet" type="text/css">
       <link href="testForms/login.css" rel="stylesheet" type="text/css">
-      <!--status bar-->
-      <script src="MyDashboard.js"></script>
-      <script src="https://code.highcharts.com/highcharts.js"></script>
-      <script src="https://code.highcharts.com/modules/exporting.js"></script>
-      <script src="https://code.highcharts.com/modules/oldie.js"></script>
-      <script src="./jquery.dataTables.min.js"></script>
-      <link rel="stylesheet" type="text/css" href="./jquery.dataTables.min.css">
-
+      <link href="https://fonts.googleapis.com/css?family=Alegreya:700|Concert+One|Raleway:800" rel="stylesheet">
     </head>
     
     <body>
@@ -25,7 +18,7 @@
             EcoHackrz
         </a>
         <div class="right menu">
-            <a href="MyDashboard.php" class="item">
+            <a href="myDashboard.php" class="item">
               My Dashboard
             </a>
             <a href="final/landing.html" class="item">
@@ -34,63 +27,31 @@
             <a href="explore.php" class="item">
               Explore
             </a>
-            <a class="item" onclick="document.getElementById('id01').style.display='block'">
-                Logout 
+            <a href="login.php" class="item">
+                Login 
             </a>
-                <!--button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button-->
-
-                <div id="id01" class="modal">
-
-              <form class="modal-content animate" action="/action_page.php">
-                <div class="container">
-                  <label><b>username</b></label>
-                  <input type="text" placeholder="enter username" name="uname" required>
-
-                  <label><b>password</b></label>
-                  <input type="password" placeholder="enter password" name="psw" required>
-
-                  <button type="submit">login</button>
-                </div>
-
-                <!--div class="container" style="background-color:#f1f1f1">
-                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">cancel</button>
-                </div-->
-              </form>
-            </div>
-
-            <script>
-            var modal = document.getElementById('id01');
-
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
-            }
-            </script>
         </div>
     </div>
       
       <div class="ui centered grid">
-          <div class="row">
+          <div class="row masthead">
             <div class="twelve wide column">
-                <h1>My Dashboard</h1> 
-                <div id="progressBar" style="min-width: 310px; max-width: 800px; height: 300px; margin: 0 auto"></div>
-
-                <table id="log_id" class="display">
-                </table>
+                <h1>Eco</h1>
+                <h1>Trackrz</h1>
+                <h2>Logging your impact one at a time</h2>
             </div>
           </div>
           <div class="row">
-            <div class="eight wide column">
+            <div class="ten wide column">
               <div class="ui text">
-                Text about our project woo hoo
+                <p>The EcoTrackrz application is inspired by "citizen science." Users input information about their daily actions that are related to impact on the environment. These individual-level logs culminate into a larger database, which provides insights about different ecological impacts people are making on regional and national levels. The user inputted data is also visually represented through js plugins that process the data onto maps and other status bar-like visualizations. </p>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="three wide column">Edu</div>
-            <div class="three wide column">cation</div>
-            <div class="three wide column">is good</div>
+          <div class="row info">
+            <div class="three wide column">In the last decade increasing numbers of green political theorists have discussed the challenges that environmental degradation presents to individual human beings and their lifestyles. Do ecological citizens already exist and, if so, who are they and what factors may explain their existence? <a href="http://www.tandfonline.com/doi/full/10.1080/09644010802624751">"In search of the ecological citizen"</a></div>
+            <div class="three wide column"><a href="https://www.thegef.org/blog/when-it-comes-fighting-climate-change-citizen-action-matters">This article goes into further detail about why citizen action matters. </a></div>
+            <div class="three wide column"><img src="assets/fig1.jpg"></div>
           </div>
         </div>
     

@@ -2,7 +2,9 @@
 // $(document).ready( function () {
 //     $('#log_id').DataTable();
 // } );
-
+$(document).ready(function() {
+    $('#example').DataTable();
+} );
 
 
 //PROGRESS BAR
