@@ -170,47 +170,18 @@
             EcoHackrz
         </a>
         <div class="right menu">
-            <a href="MyDashboard.php" class="item">
+            <a href="https://wwwp.cs.unc.edu/Courses/comp426-f17/users/mailiis/eco-hackrz/eco_hackrz/myDashboard.php" class="item">
               My Dashboard
             </a>
-            <a href="final/landing.html" class="item">
+            <a href="https://wwwp.cs.unc.edu/Courses/comp426-f17/users/mailiis/eco-hackrz/eco_hackrz/final/landing.html" class="item">
               New Entry
             </a>
-            <a href="explore.php" class="item">
+            <a href="https://wwwp.cs.unc.edu/Courses/comp426-f17/users/mailiis/eco-hackrz/eco_hackrz/explore.php" class="item">
               Explore
             </a>
-            <a class="item" onclick="document.getElementById('id01').style.display='block'">
-                Logout 
+            <a href="https://wwwp.cs.unc.edu/Courses/comp426-f17/users/mailiis/eco-hackrz/final/login.php" class="item">
+                Login 
             </a>
-                <!--button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button-->
-
-            <div id="id01" class="modal">
-              <form class="modal-content animate" action="/action_page.php">
-                <div class="container">
-                  <label><b>username</b></label>
-                  <input type="text" placeholder="enter username" name="uname" required>
-
-                  <label><b>password</b></label>
-                  <input type="password" placeholder="enter password" name="psw" required>
-
-                  <button type="submit">login</button>
-                </div>
-
-                <!--div class="container" style="background-color:#f1f1f1">
-                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">cancel</button>
-                </div-->
-              </form>
-            </div>
-
-            <script>
-                var modal = document.getElementById('id01');
-
-                window.onclick = function(event) {
-                    if (event.target == modal) {
-                        modal.style.display = "none";
-                    }
-                }
-            </script>
         </div>
     </div>
     

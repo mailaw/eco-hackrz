@@ -40,25 +40,25 @@
 
     </head>
     <body>
-      <div class="ui main menu">
-            <a href="about.html" class="item active">
-                EcoHackrz
+       <div class="ui main menu">
+        <a href="about.html" class="item active">
+            EcoHackrz
+        </a>
+        <div class="right menu">
+            <a href="https://wwwp.cs.unc.edu/Courses/comp426-f17/users/mailiis/eco-hackrz/eco_hackrz/myDashboard.php" class="item">
+              My Dashboard
             </a>
-            <div class="right menu">
-                <a href="MyDashboard.php" class="item">
-                  My Dashboard
-                </a>
-                <a href="entry.php" class="item">
-                  New Entry
-                </a>
-                <a href="explore.php" class="item">
-                  Explore
-                </a>
-                <a href="startup.html" class="item">
-                  Logout
-                </a>
-            </div>
+            <a href="https://wwwp.cs.unc.edu/Courses/comp426-f17/users/mailiis/eco-hackrz/eco_hackrz/final/landing.html" class="item">
+              New Entry
+            </a>
+            <a href="https://wwwp.cs.unc.edu/Courses/comp426-f17/users/mailiis/eco-hackrz/eco_hackrz/explore.php" class="item">
+              Explore
+            </a>
+            <a href="https://wwwp.cs.unc.edu/Courses/comp426-f17/users/mailiis/eco-hackrz/final/login.php" class="item">
+                Login 
+            </a>
         </div>
+       </div>
         <div class="ui centered grid">
             <div class="ten wide column">
                 <h1>Insights Regionally</h1>

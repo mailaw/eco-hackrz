@@ -3,7 +3,7 @@
 //     $('#log_id').DataTable();
 // } );
 $(document).ready(function() {
-    $('#example').DataTable();
+    $('#dataTable-body').DataTable();
 } );
 
 
@@ -83,7 +83,7 @@ $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=usdeur.jso
 
         series: [{
             type: 'area',
-            name: 'USD to EUR',
+            name: 'Activity',
             data: data
         }]
     });
