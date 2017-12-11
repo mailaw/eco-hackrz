@@ -16,6 +16,7 @@
           <script src="https://code.highcharts.com/modules/oldie.js"></script>
           <script src="./jquery.dataTables.min.js"></script>
           <link rel="stylesheet" type="text/css" href="./jquery.dataTables.min.css">
+          <link href="https://fonts.googleapis.com/css?family=Alegreya:700|Concert+One|Raleway:800" rel="stylesheet">
     </head>
 
     <?php

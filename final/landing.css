@@ -4,7 +4,9 @@ body {
  height: 100%;
  margin:0 auto;
  padding:0px;
- font-family: 'Work Sans', sans-serif;
+}
+h1{
+    font-family: 'Raleway', sans-serif;
 }
 
 /* css for the top header bar */

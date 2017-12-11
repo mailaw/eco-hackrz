@@ -62,9 +62,10 @@
         <div class="ui centered grid">
             <div class="ten wide column">
                 <h1>Insights Regionally</h1>
-                <button onclick="gardenToggle()">Show gardeners</button>
+                <p>Here you can view the distribution of different environmental impacts across the U.S. These insights can be used to analyze where needs are. </p>
+                <!--button onclick="gardenToggle()">Show gardeners</button>
                 <button onclick="beeToggle()">Show beekeepers</button>
-                <button onclick="activistToggle()">Show activists</button>
+                <button onclick="activistToggle()">Show activists</button-->
                 <div id="gardenDiv">
                     <?php
                         $ma = 0;
@@ -313,7 +314,7 @@
                         $mi = mysqli_num_rows($res);
                     ?>
                     </div>
-                    <div id="beeDiv" style="display: none">
+                    <div id="beeDiv">
                     <?php
 
                         $ma = 0;
@@ -563,7 +564,7 @@
 
                     ?>
                     </div>
-                    <div id="activistDiv" style="display: none">
+                    <div id="activistDiv">
                     <?php
                             $ma = 0;
                             $env_activists1 = "SELECT user_id FROM proj_Users WHERE (env_activist = 1 AND state = 'ma')";
@@ -828,10 +829,11 @@
                 <!--div id="container"></div-->
 
           <!--toggle script-->
-          <script>
+          <!--script>
               var x = document.getElementById("gardenDiv");
               var y = document.getElementById("beeDiv");
               var z = document.getElementById("activistDiv");
+              
                 function gardenToggle() {
                     if (x.style.display === "none") {
                         x.style.display = "block";
@@ -865,7 +867,7 @@
                         z.style.display = "none";
                     }
                 }
-          </script>
+          </script-->
           <script>
           console.log("state load successful");
           var MA= <?php echo $ma; ?>;
