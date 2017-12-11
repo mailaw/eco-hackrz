@@ -69,3 +69,14 @@ h3{
     font-size: 13px;
     padding: 5;
 }
+
+#progressBar{
+    min-width: 310px;
+    max-width: 800px; 
+    height: 300px; 
+    margin: 0 auto
+}
+
+.elem{
+    padding: 10px;
+}

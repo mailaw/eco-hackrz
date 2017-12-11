@@ -83,7 +83,7 @@
       <script src="Semantic-UI-master/dist/semantic.min.js"></script>
       <script src="scripts.js"></script>
       <link href="styles.css" rel="stylesheet" type="text/css">
-    
+      <link href="testForms/login.css" rel="stylesheet" type="text/css">
       <!--status bar-->
       <script src="MyDashboard.js"></script>
       <script src="https://code.highcharts.com/highcharts.js"></script>
@@ -183,15 +183,45 @@
             <a href="MyDashboard.php" class="item">
               My Dashboard
             </a>
-            <a href="entry.php" class="item">
+            <a href="final/Logitem.php" class="item">
               New Entry
             </a>
             <a href="explore.php" class="item">
               Explore
             </a>
-            <a href="startup.html" class="item">
-              Logout
+            <a class="item" onclick="document.getElementById('id01').style.display='block'">
+                Logout 
             </a>
+                <!--button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button-->
+
+                <div id="id01" class="modal">
+
+              <form class="modal-content animate" action="/action_page.php">
+                <div class="container">
+                  <label><b>username</b></label>
+                  <input type="text" placeholder="enter username" name="uname" required>
+
+                  <label><b>password</b></label>
+                  <input type="password" placeholder="enter password" name="psw" required>
+
+                  <button type="submit">login</button>
+                </div>
+
+                <!--div class="container" style="background-color:#f1f1f1">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">cancel</button>
+                </div-->
+              </form>
+            </div>
+
+            <script>
+            var modal = document.getElementById('id01');
+
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            </script>
         </div>
     </div>
     
@@ -201,9 +231,9 @@
 
             <div class="eight wide column">
                 <h1>My Dashboard</h1> 
-                <div id="progressBar" style="min-width: 310px; max-width: 800px; height: 300px; margin: 0 auto"></div>
+                <div class="elem" id="progressBar"></div>
 
-                <table id="dataTable" class="display" cellspacing="0" width="100%">
+                <table class="elem" id="dataTable" class="display" cellspacing="0" width="100%">
                     <thead id="dataTable-head">
                         <tr>
                             <th>Category</th>
@@ -226,20 +256,21 @@
             </div>
             
             <div class="four wide column">
-                <div class="ui container gray-bg">
-                    <h3>This is where the pulse will go.</h3>
+                <div class="ui container gray-bg elem">
+                    <h3>Your pulse</h3>
                     <div id="pulse-container" style="min-width: 80; height: 300px; margin: 0 auto"></div>
                 </div>
-                
-                <h2>Hello Kimia!</h2>
-                <h3>Chapel Hill, NC</h3>
-                <h3>Total entries: 300</h3>
-                <div class="ui container bar-container">
-                    <div class="ui olive active progress" data-percent="90" id="progress-bar">
-                        <div class="bar">
-                            <div class="progress"></div>
+                <div class="elem">
+                    <h2>Hello Kimia!</h2>
+                    <h3>Chapel Hill, NC</h3>
+                    <h3>Total entries: 300</h3>
+                    <div class="ui container bar-container">
+                        <div class="ui olive active progress" data-percent="90" id="progress-bar">
+                            <div class="bar">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="label">Your progress on this year's goal</div>
                         </div>
-                        <div class="label">Your progress on this year's goal</div>
                     </div>
                 </div>
             </div>
