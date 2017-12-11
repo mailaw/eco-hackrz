@@ -5,14 +5,12 @@ body {
  margin:0 auto;
  padding:0px;
  font-family: 'Work Sans', sans-serif;
- background-color: #01848F;
 }
 
 /* css for the top header bar */
 #header_wrapper {
   width: 90%;
   height: 10%;
-  background-color:#01848F;
   padding-left: 5rem;
 }
 
@@ -351,4 +349,8 @@ li:hover #content {
   text-transform: uppercase;
   background-color: #F9A11F;
   padding: 10px;
+}
+
+.header-row{
+    background-color: floralwhite;
 }

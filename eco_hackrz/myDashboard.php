@@ -170,10 +170,10 @@
             EcoHackrz
         </a>
         <div class="right menu">
-            <a href="https://wwwp.cs.unc.edu/Courses/comp426-f17/users/mailiis/eco-hackrz/eco_hackrz/myDashboard.php" class="item">
+            <a href="myDashboard.php" class="item active">
               My Dashboard
             </a>
-            <a href="https://wwwp.cs.unc.edu/Courses/comp426-f17/users/mailiis/eco-hackrz/eco_hackrz/final/landing.html" class="item">
+            <a href="https://wwwp.cs.unc.edu/Courses/comp426-f17/users/mailiis/eco-hackrz/final/landing.html" class="item">
               New Entry
             </a>
             <a href="https://wwwp.cs.unc.edu/Courses/comp426-f17/users/mailiis/eco-hackrz/eco_hackrz/explore.php" class="item">

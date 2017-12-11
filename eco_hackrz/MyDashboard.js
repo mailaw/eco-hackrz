@@ -2,9 +2,9 @@
 // $(document).ready( function () {
 //     $('#log_id').DataTable();
 // } );
-$(document).ready(function() {
-    $('#dataTable-body').DataTable();
-} );
+//$(document).ready(function() {
+//    $('#dataTable-body').DataTable();
+//} );
 
 
 //PROGRESS BAR
