@@ -1,0 +1,354 @@
+/* default body css */
+body {
+ width:100%;
+ height: 100%;
+ margin:0 auto;
+ padding:0px;
+ font-family: 'Work Sans', sans-serif;
+ background-color: #01848F;
+}
+
+/* css for the top header bar */
+#header_wrapper {
+  width: 90%;
+  height: 10%;
+  background-color:#01848F;
+  padding-left: 5rem;
+}
+
+/* resize the image */
+.resize{
+  height: 3em;
+  width: auto;
+}
+
+#topPic{
+  display: inline-block;
+  float:left;
+  padding-top: 1.5rem;
+}
+
+#topLeft {
+  float: left;
+  display: inline-block;
+  margin-top: -5px;
+}
+
+.name{
+  font-family: 'Space Mono', monospace;
+  color: #77C6C0;
+}
+
+#logout {
+  float: right;
+  margin-top: 20px;
+  background: none;
+  box-shadow: none;
+  border-radius: 0px;
+  height: 3em;
+  width: auto;
+  padding: 10px;
+  border: 1px solid #BDBDBD;
+  text-transform: uppercase;
+  background-color: #F9A11F;
+  padding: 10px;
+}
+
+#logout:hover{
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+
+#welcome {
+  float: left;
+  padding-left: 17rem;
+  padding-top: 3px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight:normal;
+}
+
+#todo_wrapper {
+  width: 90%;
+  height: 85%;
+  margin: 0 auto;
+  font-family: 'Work Sans', sans-serif;
+}
+
+h1 {
+  font-weight:normal;
+}
+
+button{
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+#addTab {
+  float: right;
+}
+
+.plus {
+  content: "\002B";
+  color: #F9A11F;
+  font-weight: bolder;
+}
+
+ h1:hover {
+  cursor: default;
+}
+
+.fa-plus {
+  padding: 10px;
+  float: right;
+  font-size: 25px;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(45deg);
+  transition: -webkit-transform 0.5s;
+}
+
+.fa-plus:hover {
+  cursor: pointer;
+}
+
+.title {
+  width: 100%;
+  height: 30px;
+  padding-left: 25px;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: none;
+  background-color: #f8f3eb;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 0.7s;
+  transition: opacity 0.7s;
+}
+
+.title:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+
+ul {
+  padding: 0px;
+  margin-top: 0;
+  list-style-type: none;
+}
+
+li {
+  outline: none;
+  cursor: text;
+}
+
+li:nth-child(2n) {
+  background: rgba(237, 212, 176, 0.77);
+}
+
+li:last-child {
+  padding-bottom: 15px;
+}
+
+li:hover {
+  font-weight: 500;
+}
+
+li i {
+  padding: 8px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.list-item-content {
+  display: inline-block;
+}
+
+#content {
+  display: none;
+  padding-left: 20px;
+
+}
+
+#warningSign {
+  padding: 5px 0;
+  text-align: center;
+  background-color: #e74c3c;
+  color: white;
+  display: none;
+}
+
+span {
+  width: 15px;
+  height: 32px;
+  float: right;
+  background-color: #e74c3c;
+  text-align: center;
+  color: white;
+  opacity: 0;
+}
+
+li:hover span {
+  width: 50px;
+  font-weight: normal;
+  opacity: 1;
+  cursor: pointer;
+  -webkit-transition: width 0.25s linear;
+}
+
+li:hover #content {
+  display: block;
+  -webkit-transition: width 0.25s linear;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #f1f1f1;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    text-align: center;
+}
+
+#group_form > input {
+  background: transparent;
+    border: none;
+    border-bottom: 1px dotted rgba(0,0,0,0.4);
+    padding: 10px 0;
+    border-radius: 0;
+    width: 23em;
+    font-family: 'Work Sans', sans-serif;
+}
+
+#group_form > input[type="submit"]{
+  background: none;
+  box-shadow: none;
+  border-radius: 0px;
+  height: 3em;
+  width: auto;
+  padding: 10px;
+  border: 1px solid #BDBDBD;
+  text-transform: uppercase;
+  background-color: #F9A11F;
+  padding: 10px;
+}
+
+.button:hover{
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: inherit;
+    opacity: 100;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#footer {
+  position: absolute;
+  bottom: 5;
+  right: 40;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.tooltip > i {
+  font-size: 3em;
+  color: orange;
+}
+
+.tooltip>i:hover{
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 0;
+    opacity: 100;
+    padding-top: 5px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    text-align: center;
+}
+
+#entry_form > input {
+  background: transparent;
+    border: none;
+    border-bottom: 1px dotted rgba(0,0,0,0.4);
+    padding: 10px 0;
+    border-radius: 0;
+    width: 23em;
+    font-family: 'Work Sans', sans-serif;
+}
+
+#entry_form > input[type="submit"]{
+  background: none;
+  box-shadow: none;
+  border-radius: 0px;
+  height: 3em;
+  width: auto;
+  padding: 10px;
+  border: 1px solid #BDBDBD;
+  text-transform: uppercase;
+  background-color: #F9A11F;
+  padding: 10px;
+}

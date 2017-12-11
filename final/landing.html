@@ -1,0 +1,81 @@
+<!DOCTYPE>
+<html>
+<head>
+  <link href="landing.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+  <script type="text/javascript" src="jquery-3.2.1.js"></script>
+
+</head>
+
+<body>
+  <?php
+$referrer = $_SERVER['HTTP_REFERER'];
+if (!preg_match("authenticate.html",$referrer)) {
+header('Location: authenticate.html');
+} ;
+?>
+<form id="logout_form">
+    <input class="button" type="submit" value="logout">
+</form>
+<div id="header_wrapper">
+  <div id="topPic"><img class="resize" src="hackplanet.png"></div>
+  <div id="topLeft"><h1 class="name">eco-hackrz</h1></div>
+  <div id="welcome"><h1>welcome!</h1></div>
+</div>
+
+<br>
+
+
+<!-- placeholder for myDashboard stuff?-->
+<!-- need button to new entry page -->
+    
+<form action="/action_page.php">
+  <fieldset>
+    <legend>New Entry</legend>
+    User:<br>
+    <input type="text" name="username" value="You!">
+    <br><br>
+      
+    
+    Category:<br>
+    <select name="category">
+        <option value="one">waste</option>
+        <option value="two">transport</option>
+        <option value="three">cultivation</option>
+        <option value="four">resources</option>
+      </select>
+    <br><br>
+      
+    Type:<br>
+      <input type="radio" name="obs" value="observation" > Observation <br>
+        <input type="radio" name="act" value="action"> Action <br>
+    <br>
+      
+      Impact:<br>
+      <input type="radio" name="good" value="positive" > Positive <br>
+        <input type="radio" name="bad" value="negative"> Negative <br>
+    <br>
+      
+      Date:<br>
+      <input type="date" name="when">
+    <br><br>
+      
+      Location (Zip):<br>
+      <input type="zip" name="zip">
+    <br><br>
+      
+      Notes:<br>
+      <textarea name="notes" rows="10" cols="30"> Any notes you want to save about this entry
+      </textarea>
+    <br>
+      
+      <br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
+
+</body>
+</html>
