@@ -77,13 +77,22 @@
 <html>
 <head>
     <title>My Dashboard</title>
-    <script src="jquery-3.2.1.js"></script>
-    <script src="./jquery.dataTables.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="./jquery.dataTables.min.css">
-
-	<script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/modules/oldie.js"></script>
+    <!--semantics-->
+    <link href="Semantic-UI-master/dist/semantic.min.css" rel="stylesheet" type="text/css">
+      <script src="jquery-3.2.1.js"></script>
+      <script src="Semantic-UI-master/dist/semantic.min.js"></script>
+      <script src="scripts.js"></script>
+      <link href="styles.css" rel="stylesheet" type="text/css">
+    
+      <!--status bar-->
+      <script src="MyDashboard.js"></script>
+      <script src="https://code.highcharts.com/highcharts.js"></script>
+      <script src="https://code.highcharts.com/modules/exporting.js"></script>
+      <script src="https://code.highcharts.com/modules/oldie.js"></script>
+      <script src="./jquery.dataTables.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="./jquery.dataTables.min.css">
+      <!--link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
+      <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script-->
 </head>
 
 <body>
@@ -156,7 +165,7 @@
         ] ).draw( false );
     //} );
 
-alert(action[i]);
+//alert(action[i]);
 //$('#addRow').click();
  	}
 
@@ -166,33 +175,75 @@ alert(action[i]);
 
 	</script>
 
-
+    <div class="ui main menu">
+        <a href="about.html" class="item active">
+            EcoHackrz
+        </a>
+        <div class="right menu">
+            <a href="MyDashboard.php" class="item">
+              My Dashboard
+            </a>
+            <a href="entry.php" class="item">
+              New Entry
+            </a>
+            <a href="explore.php" class="item">
+              Explore
+            </a>
+            <a href="startup.html" class="item">
+              Logout
+            </a>
+        </div>
+    </div>
+    
 	<!-- *********************************** PROGRESSBAR/DATATABLES *************************************** -->
+        
+        <div class="ui centered grid">
 
-<div id="progressBar" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+            <div class="eight wide column">
+                <h1>My Dashboard</h1> 
+                <div id="progressBar" style="min-width: 310px; max-width: 800px; height: 300px; margin: 0 auto"></div>
 
-
-<table id="dataTable" class="display" cellspacing="0" width="100%">
-        <thead id="dataTable-head">
-            <tr>
-                <th>Category</th>
-                <th>Action</th>
-                <th>Date Logged</th>
-                <th>Notes</th>
-            </tr>
-        </thead>
-        <tfoot id="dataTable-foot">
-            <tr>
-                <th>Category</th>
-                <th>Action</th>
-                <th>Date Logged</th>
-                <th>Notes</th>
-            </tr>
-        </tfoot>
-        <tbody id="dataTable-body">
-
-        </tbody>
-    </table>
-		<button type='button' id='addRow'>ADD ROW</button>
+                <table id="dataTable" class="display" cellspacing="0" width="100%">
+                    <thead id="dataTable-head">
+                        <tr>
+                            <th>Category</th>
+                            <th>Action</th>
+                            <th>Date Logged</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tfoot id="dataTable-foot">
+                        <tr>
+                            <th>Category</th>
+                            <th>Action</th>
+                            <th>Date Logged</th>
+                            <th>Notes</th>
+                        </tr>
+                    </tfoot>
+                    <tbody id="dataTable-body"></tbody>
+                </table>
+                <button type='button' id='addRow'>ADD ROW</button>
+            </div>
+            
+            <div class="four wide column">
+                <div class="ui container gray-bg">
+                    <h3>This is where the pulse will go.</h3>
+                    <div id="pulse-container" style="min-width: 80; height: 300px; margin: 0 auto"></div>
+                </div>
+                
+                <h2>Hello Kimia!</h2>
+                <h3>Chapel Hill, NC</h3>
+                <h3>Total entries: 300</h3>
+                <div class="ui container bar-container">
+                    <div class="ui olive active progress" data-percent="90" id="progress-bar">
+                        <div class="bar">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="label">Your progress on this year's goal</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
     </body>
 </html>
