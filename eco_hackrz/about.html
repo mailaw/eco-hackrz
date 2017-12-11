@@ -1,41 +1,98 @@
 <html>
     <head>
-      <link href="Semantic-UI-master/dist/semantic.min.css" rel="stylesheet" type="text/css">
+       <title>My Dashboard</title>
+    <!--semantics-->
+    <link href="Semantic-UI-master/dist/semantic.min.css" rel="stylesheet" type="text/css">
       <script src="jquery-3.2.1.js"></script>
       <script src="Semantic-UI-master/dist/semantic.min.js"></script>
       <script src="scripts.js"></script>
       <link href="styles.css" rel="stylesheet" type="text/css">
+      <link href="testForms/login.css" rel="stylesheet" type="text/css">
+      <!--status bar-->
+      <script src="MyDashboard.js"></script>
+      <script src="https://code.highcharts.com/highcharts.js"></script>
+      <script src="https://code.highcharts.com/modules/exporting.js"></script>
+      <script src="https://code.highcharts.com/modules/oldie.js"></script>
+      <script src="./jquery.dataTables.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="./jquery.dataTables.min.css">
 
     </head>
     
     <body>
       <!--menu-->
       <div class="ui main menu">
-        <a class="item active">
+        <a href="about.html" class="item active">
             EcoHackrz
         </a>
         <div class="right menu">
-            <a href="" class="item">
+            <a href="MyDashboard.php" class="item">
               My Dashboard
             </a>
-            <a class="item">
+            <a href="final/landing.html" class="item">
               New Entry
             </a>
-            <a class="item">
+            <a href="explore.php" class="item">
               Explore
             </a>
-            <a class="item">
-              Info
+            <a class="item" onclick="document.getElementById('id01').style.display='block'">
+                Logout 
             </a>
-            <a class="item">
-              Logout
-            </a>
+                <!--button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button-->
+
+                <div id="id01" class="modal">
+
+              <form class="modal-content animate" action="/action_page.php">
+                <div class="container">
+                  <label><b>username</b></label>
+                  <input type="text" placeholder="enter username" name="uname" required>
+
+                  <label><b>password</b></label>
+                  <input type="password" placeholder="enter password" name="psw" required>
+
+                  <button type="submit">login</button>
+                </div>
+
+                <!--div class="container" style="background-color:#f1f1f1">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">cancel</button>
+                </div-->
+              </form>
+            </div>
+
+            <script>
+            var modal = document.getElementById('id01');
+
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            </script>
         </div>
-      </div>
+    </div>
       
-      <div class="ui text">
-         <p>About EcoHackrz. This is an aboutThis is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about This is an about  </p>
-      </div>
+      <div class="ui centered grid">
+          <div class="row">
+            <div class="twelve wide column">
+                <h1>My Dashboard</h1> 
+                <div id="progressBar" style="min-width: 310px; max-width: 800px; height: 300px; margin: 0 auto"></div>
+
+                <table id="log_id" class="display">
+                </table>
+            </div>
+          </div>
+          <div class="row">
+            <div class="eight wide column">
+              <div class="ui text">
+                Text about our project woo hoo
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="three wide column">Edu</div>
+            <div class="three wide column">cation</div>
+            <div class="three wide column">is good</div>
+          </div>
+        </div>
     
     </body>
 </html>

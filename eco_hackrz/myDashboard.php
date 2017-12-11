@@ -183,7 +183,7 @@
             <a href="MyDashboard.php" class="item">
               My Dashboard
             </a>
-            <a href="final/Logitem.php" class="item">
+            <a href="final/landing.html" class="item">
               New Entry
             </a>
             <a href="explore.php" class="item">
