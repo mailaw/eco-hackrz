@@ -1,0 +1,60 @@
+<html>
+<head>
+  <link href="authenticate_style.css" type="text/css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <title>eco-hackrz</title>
+  <link rel="icon" href="hackplanet.png">
+
+<script src="jquery-3.2.1.js"></script>
+<script src="User.js"></script>
+<script src="client-side.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
+
+</head>
+
+<body>
+<div id="wrapper">
+    <div id="right">
+      <div id="topPic"><a href="authenticate.html"><img class="resize" src="hackplanet.png"></a></div>
+      <div id="topRight"><span class="name"><h1>eco-hackrz</h1></span></div>
+      <br><br><br>
+      <br><br><br>
+      <h1>welcome!</h1>
+      <h3>register for a <span class="name">eco-hackrz</span> account here.</h3>
+      <p><span class="name">eco-hackrz</span> wants you to know every action in favor of the planet's health (and every one against it) count.</p>
+
+      <form id='register_form'>
+        <h1>About You</h1>
+        <input type="text" placeholder="first name" name='first_name' id="firstname" required><br>
+        <input type="text" placeholder="last name" name='last_name' id="lastname" required><br>
+        <input type="text" placeholder="state" name='state' required><br>
+        <br>
+          
+        <h1>Where are you on your eco friendly journey?</h1>
+        <input type="checkbox" name="op1" value="gardening">gardening<br>
+        <input type="checkbox" name="op2" value="beekeeping">bee keeping<br>
+        <input type="checkbox" name="op3" value="compost">composting<br>
+        <input type="checkbox" name="op4" value="advocating">advocating<br>
+          
+        <h1>Sign Up</h1>
+        <input type="username" placeholder="username" name='username' required>
+        <input type="password" placeholder="password" name='password' required><br><br>
+        <input class="button" type="submit" value="join!">
+      </form>
+
+    </div>
+
+    <div id="left">
+      <h1>already a member of our community of sustainability advocates?</h1>
+      <h3>login</h3>
+      <form id='login_form'>
+        <input name='username' type="text" placeholder="username"><br>
+        <input name='password' type="password" placeholder="password"><br><br>
+        <input class="button" type="submit" value="login">
+      </form>
+    </div>
+</div>
+</body>
