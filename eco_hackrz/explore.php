@@ -22,21 +22,22 @@
     ?>
 
     <head>
-  
-      <!--semantics-->
-      <link href="Semantic-UI-master/dist/semantic.min.css" rel="stylesheet" type="text/css">
-      <script src="jquery-3.2.1.js"></script>
-      <script src="Semantic-UI-master/dist/semantic.min.js"></script>
-      <script src="scripts.js"></script>
-      <link href="styles.css" rel="stylesheet" type="text/css">
-
+     <script src="jquery-3.2.1.js"></script>
+      
       <script src="https://code.highcharts.com/maps/highmaps.js"></script>
       <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
       <script src="https://code.highcharts.com/mapdata/countries/us/custom/us-all-mainland.js"></script>
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"-->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <!--script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <!--semantic-->
+      <link href="Semantic-UI-master/dist/semantic.min.css" rel="stylesheet" type="text/css">
+      
+      <script src="Semantic-UI-master/dist/semantic.min.js"></script>
+      <script src="scripts.js"></script>
+      <link href="styles.css" rel="stylesheet" type="text/css">
+
     </head>
     <body>
       <div class="ui main menu">
@@ -60,9 +61,10 @@
         </div>
         <div class="ui centered grid">
             <div class="ten wide column">
-                
+                <h1>Insights Regionally</h1>
                 <button onclick="gardenToggle()">Show gardeners</button>
-                <button onclick="beeToggle()">Show Beekeepers</button>
+                <button onclick="beeToggle()">Show beekeepers</button>
+                <button onclick="activistToggle()">Show activists</button>
                 <div id="gardenDiv">
                     <?php
                         $ma = 0;
@@ -311,7 +313,7 @@
                         $mi = mysqli_num_rows($res);
                     ?>
                     </div>
-                <div id="beeDiv">
+                    <div id="beeDiv" style="display: none">
                     <?php
 
                         $ma = 0;
@@ -561,10 +563,8 @@
 
                     ?>
                     </div>
-                    <div id="container activistDiv">
-                        <h1>test</h1>
-                        <?php
-
+                    <div id="activistDiv" style="display: none">
+                    <?php
                             $ma = 0;
                             $env_activists1 = "SELECT user_id FROM proj_Users WHERE (env_activist = 1 AND state = 'ma')";
                             $res1 = $conn->query($env_activists1);
@@ -829,25 +829,45 @@
 
           <!--toggle script-->
           <script>
+              var x = document.getElementById("gardenDiv");
+              var y = document.getElementById("beeDiv");
+              var z = document.getElementById("activistDiv");
                 function gardenToggle() {
-                    var x = document.getElementById("gardenDiv");
                     if (x.style.display === "none") {
                         x.style.display = "block";
+                        y.style.display = "none";
+                        z.style.display = "none";
                     } else {
                         x.style.display = "none";
+                        y.style.display = "block";
+                        z.style.display = "block";
                     }
                 }
               function beeToggle() {
-                    var x = document.getElementById("beeDiv");
-                    if (x.style.display === "none") {
-                        x.style.display = "block";
-                    } else {
+                    if (y.style.display === "none") {
                         x.style.display = "none";
+                        y.style.display = "block";
+                        z.style.display = "none";
+                    } else {
+                        x.style.display = "block";
+                        y.style.display = "none";
+                        z.style.display = "block";
+                    }
+                }
+              function activistToggle() {
+                    if (z.style.display === "none") {
+                        x.style.display = "none";
+                        y.style.display = "none";
+                        z.style.display = "block";
+                    } else {
+                        x.style.display = "block";
+                        y.style.display = "block";
+                        z.style.display = "none";
                     }
                 }
           </script>
           <script>
-          console.log("hi");
+          console.log("state load successful");
           var MA= <?php echo $ma; ?>;
           var WA= <?php echo $wa; ?>;
           var CA= <?php echo $ca; ?>;
