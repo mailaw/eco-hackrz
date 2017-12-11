@@ -9,12 +9,13 @@
           <script src="scripts.js"></script>
           <link href="styles.css" rel="stylesheet" type="text/css">
           <link href="/testForms/login.html" rel="stylesheet" type="text/css">
-          <script src="MyDashboard.js"></script>
+          
           <!--status bar-->
           <script src="https://code.highcharts.com/highcharts.js"></script>
           <script src="https://code.highcharts.com/modules/exporting.js"></script>
           <script src="https://code.highcharts.com/modules/oldie.js"></script>
           <script src="./jquery.dataTables.min.js"></script>
+          <script src="MyDashboard.js"></script>
           <link rel="stylesheet" type="text/css" href="./jquery.dataTables.min.css">
           <link href="https://fonts.googleapis.com/css?family=Alegreya:700|Concert+One|Raleway:800" rel="stylesheet">
     </head>
@@ -220,6 +221,7 @@
                 <div class="ui container gray-bg elem">
                     <h3>Your pulse</h3>
                     <div id="pulse-container" style="min-width: 80; height: 300px; margin: 0 auto"></div>
+           
                 </div>
                 <div class="elem">
                     <h2>Hello Kimia!</h2>
