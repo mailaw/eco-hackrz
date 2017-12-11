@@ -1,0 +1,34 @@
+proj_Users
+
++-----------------+--------------+------+-----+---------+----------------+
+| Field           | Type         | Null | Key | Default | Extra          |
++-----------------+--------------+------+-----+---------+----------------+
+| user_id         | int(11)      | NO   | PRI | NULL    | auto_increment |
+| FirstName       | varchar(100) | NO   |     | NULL    |                |
+| LastName        | varchar(100) | NO   |     | NULL    |                |
+| AgeRange        | int(11)      | NO   |     | NULL    |                |
+| Zip             | int(11)      | NO   |     | NULL    |                |
+| Email           | varchar(200) | NO   |     | NULL    |                |
+| Phone           | varchar(20)  | NO   |     | NULL    |                |
+| help_attribute  | tinyint(1)   | NO   |     | NULL    |                |
+| waste_attribute | tinyint(1)   | NO   |     | NULL    |                |
+| password        | varchar(100) | NO   |     | NULL    |                |
++-----------------+--------------+------+-----+---------+----------------+
+
+
+
+proj_Log_Items
+
++----------------+--------------+------+-----+---------+----------------+
+| Field          | Type         | Null | Key | Default | Extra          |
++----------------+--------------+------+-----+---------+----------------+
+| item_id        | int(11)      | NO   | PRI | NULL    | auto_increment |
+| Title          | int(11)      | NO   |     | NULL    |                |
+| waste_category | tinyint(1)   | NO   |     | NULL    |                |
+| help_category  | tinyint(1)   | NO   |     | NULL    |                |
+| activity       | tinyint(1)   | NO   |     | NULL    |                |
+| observation    | tinyint(1)   | NO   |     | NULL    |                |
+| date_input     | date         | NO   |     | NULL    |                |
+| Zip            | varchar(100) | NO   |     | NULL    |                |
+| Notes          | longtext     | NO   |     | NULL    |                |
++----------------+--------------+------+-----+---------+----------------+

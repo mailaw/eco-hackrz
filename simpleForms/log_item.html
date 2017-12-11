@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    
+<body>
+
+<form action="/log_action_page.php">
+  <fieldset>
+    <legend>New Entry</legend>
+    User:<br>
+    <input type="text" name="username" value="You!">
+    <br><br>
+      
+    
+    Category:<br>
+    <select name="category">
+        <option value="one">waste</option>
+        <option value="two">transport</option>
+        <option value="three">cultivation</option>
+        <option value="four">resources</option>
+      </select>
+    <br><br>
+      
+      Impact:<br>
+      <input type="radio" name="good" value="positive" > Positive <br>
+        <input type="radio" name="bad" value="negative"> Negative <br>
+    <br>
+      
+      Date:<br>
+      <input type="date" name="when">
+    <br><br>
+      
+      Location (ST):<br>
+      <input type="zip" name="state">
+    <br><br>
+      
+      Notes:<br>
+      <textarea name="notes" rows="10" cols="30"> Any notes you want to save about this entry
+      </textarea>
+    <br>
+      
+      <br>
+    <input type="submit" value="Submit" action="/log_action_page.php"">
+  </fieldset>
+</form>
+
+</body>
+</html>
