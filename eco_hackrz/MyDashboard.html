@@ -11,8 +11,8 @@
       <script src="https://code.highcharts.com/highcharts.js"></script>
       <script src="https://code.highcharts.com/modules/exporting.js"></script>
       <script src="https://code.highcharts.com/modules/oldie.js"></script>
-      <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
-      <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+      <!--link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
+      <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script-->
 
     </head>
     
@@ -40,11 +40,10 @@
             </div>
         </div>
         
-        <h1>My Dashboard</h1>
         <div class="ui centered grid">
+
             <div class="eight wide column">
-                
-        
+                <h1>My Dashboard</h1> 
                 <div id="progressBar" style="min-width: 310px; max-width: 800px; height: 300px; margin: 0 auto"></div>
 
                 <table id="log_id" class="display">
@@ -53,11 +52,14 @@
             <div class="four wide column">
                 <div class="ui container gray-bg">
                     <h3>This is where the pulse will go.</h3>
+                    <div id="pulse-container" style="min-width: 80; height: 300px; margin: 0 auto"></div>
                 </div>
                 
-                <h2>About You</h2>
+                <h2>Hello Kimia!</h2>
+                <h3>Chapel Hill, NC</h3>
+                <h3>Total entries: 300</h3>
                 <div class="ui container bar-container">
-                    <div class="ui active progress" data-value="30" data-total="100" >
+                    <div class="ui olive active progress" data-percent="90" id="progress-bar">
                         <div class="bar">
                             <div class="progress"></div>
                         </div>
